@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+//LOGO + TITRE: font-family: 'Shrikhand', cursive;
+//TEXTE : font-family: 'Roboto', sans-serif;
+
+h1 {
+  font-family: "Shrikhand";
+  text-align: center;
+  margin: 0.67em 0 0px;
+  background-color: white;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+strong {
+}
+a {
+  text-decoration: none;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.centre {
+  width: 90%;
+  margin: 0 auto;
+}

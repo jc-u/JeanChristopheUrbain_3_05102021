@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  text-align: center;
+  margin: 0.67em 0 0px;
+  background-color: white;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.centre {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accueil header {
+  text-align: center;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+
+.accueil header .header__logo {
+  height: 40px;
+  background-color: white;
+}
+
+.accueil header .header__input {
+  background-color: #eaeaea;
+  height: 50px;
+  line-height: 50px;
+}
+
+.accueil header .header__input input {
+  font-family: "Roboto", sans-serif;
+  border-width: 0;
+  text-align: center;
+  background-image: url("../../assets/map-marker-alt-solid.svg");
+  background-repeat: no-repeat;
+  background-color: #eaeaea;
+}
+
+.accueil header .header__input input:focus {
+  outline: 0;
+}
+
+.accueil header .header__titre h2 {
+  width: 76%;
+  margin: 40px auto 10px;
+}
+
+.accueil header .header__titre h3 {
+  margin: 10px auto 40px;
+}
+
+.accueil header .header__bouton a {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff79d9), to(#9256dc));
+  background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+  background-color: #ff79d9;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 8px 7px -5px #bdbdbd;
+          box-shadow: 0px 8px 7px -5px #bdbdbd;
+}
+
+.accueil #fonctionnement {
+  padding: 50px 0;
+}
+
+.accueil #fonctionnement h2 {
+  margin-bottom: 30px;
+}
+
+.accueil #fonctionnement .fonctionnement__carte .carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  padding: 35px 0;
+  margin-bottom: 20px;
+  border-radius: 28px;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0px 8px 7px -5px #bdbdbd;
+          box-shadow: 0px 8px 7px -5px #bdbdbd;
+  margin-left: 10px;
+}
+
+.accueil #fonctionnement .fonctionnement__carte .carte .carte__numero {
+  color: white;
+  background: #9356dc;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  left: -10px;
+  width: 22px;
+  height: 22px;
+}
+
+.accueil #fonctionnement .fonctionnement__carte .carte .carte__numero h5 {
+  line-height: 12px;
+  font-weight: normal;
+  font-size: 0.83em;
+}
+
+.accueil #fonctionnement .fonctionnement__carte .carte .carte__icone {
+  width: 17px;
+  position: absolute;
+  left: 10%;
+}
+
+.accueil #fonctionnement .fonctionnement__carte .carte .carte__titre {
+  position: absolute;
+  left: 20%;
+}
+
+.accueil #restaurants {
+  padding: 50px 0;
+  background-color: #f6f6f6;
+}
+
+.accueil #restaurants h2 {
+  margin-bottom: 30px;
+}
+
+.accueil #restaurants .restaurants__carte .carte {
+  min-height: 260px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 8px 7px -5px #bdbdbd;
+          box-shadow: 0px 8px 7px -5px #bdbdbd;
+}
+
+.accueil #restaurants .restaurants__carte .carte:nth-child(1) a .carte__photo {
+  background-image: url("../../assets/la-palette-du-gout.jpg");
+}
+
+.accueil #restaurants .restaurants__carte .carte:nth-child(2) a .carte__photo {
+  background-image: url("../../assets/la-note-enchantee.jpg");
+}
+
+.accueil #restaurants .restaurants__carte .carte:nth-child(3) a .carte__photo {
+  background-image: url("../../assets/a-la-francaise.jpg");
+}
+
+.accueil #restaurants .restaurants__carte .carte:nth-child(4) a .carte__photo {
+  background-image: url("../../assets/le-delice-des-sens.jpg");
+}
+
+.accueil #restaurants .restaurants__carte .carte a {
+  display: block;
+  height: 260px;
+  color: black;
+}
+
+.accueil #restaurants .restaurants__carte .carte a .carte__photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 70%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+/*# sourceMappingURL=styles.css.map */
