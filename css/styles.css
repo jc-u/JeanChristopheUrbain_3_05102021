@@ -23,11 +23,11 @@ h2 {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 h5 {
@@ -41,6 +41,7 @@ h6 {
 
 p {
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 a {
@@ -93,6 +94,7 @@ ul li {
 
 .accueil header .header__titre h3 {
   margin: 10px auto 40px;
+  font-weight: normal;
 }
 
 .accueil header .header__bouton a {
@@ -148,7 +150,7 @@ ul li {
   height: 22px;
 }
 
-.accueil #fonctionnement .fonctionnement__carte .carte .carte__numero h5 {
+.accueil #fonctionnement .fonctionnement__carte .carte .carte__numero h3 {
   line-height: 12px;
   font-weight: normal;
   font-size: 0.83em;
@@ -210,10 +212,85 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 70%;
+  min-height: 63%;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   position: relative;
   z-index: 1;
+}
+
+.accueil #restaurants .restaurants__carte .carte a .carte__nouveau {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.accueil #restaurants .restaurants__carte .carte a .carte__nouveau p {
+  color: #008766;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.accueil #restaurants .restaurants__carte .carte a .carte__titre {
+  margin: 20px 0 10px 10px;
+}
+
+.accueil #restaurants .restaurants__carte .carte a .carte__lieu {
+  margin: 0 0 20px 10px;
+}
+
+.accueil #restaurants .restaurants__carte .carte a .carte__lieu h3 {
+  font-weight: normal;
+}
+
+.accueil #restaurants .restaurants__carte .carte .carte__coeur {
+  position: absolute;
+  bottom: 14%;
+  right: 6%;
+}
+
+.accueil #restaurants .restaurants__carte .carte .carte__coeur i {
+  font-size: 22px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 30px 25px;
+}
+
+footer .footer__logo p {
+  margin-bottom: 30px;
+  font-family: "Shrikhand", cursive;
+}
+
+footer .footer__proposition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__proposition .logo {
+  width: 20px;
+}
+
+footer .footer__proposition p {
+  margin-left: 10px;
+}
+
+footer .footer__partenaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__partenaire p {
+  margin-left: 10px;
+}
+
+footer p {
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

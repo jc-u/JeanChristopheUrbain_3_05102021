@@ -33,6 +33,7 @@
       }
       h3 {
         margin: 10px auto 40px;
+        font-weight: normal;
       }
     }
 
@@ -83,7 +84,7 @@
           width: 22px;
           height: 22px;
 
-          h5 {
+          h3 {
             line-height: 12px;
             font-weight: normal;
             font-size: 0.83em;
@@ -141,11 +142,45 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            min-height: 70%;
+            min-height: 63%;
             overflow: hidden;
-            border-radius: 20px;
+            border-radius: 20px 20px 0 0;
             position: relative;
             z-index: 1;
+          }
+
+          .carte__nouveau {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: $tertiaire;
+            z-index: 2;
+            border-radius: 2px;
+            p {
+              color: #008766;
+              padding: 10px;
+              font-weight: bold;
+            }
+          }
+
+          .carte__titre {
+            margin: 20px 0 10px 10px;
+          }
+
+          .carte__lieu {
+            margin: 0 0 20px 10px;
+            h3 {
+              font-weight: normal;
+            }
+          }
+        }
+
+        .carte__coeur {
+          position: absolute;
+          bottom: 14%;
+          right: 6%;
+          i {
+            font-size: 22px;
           }
         }
       }
