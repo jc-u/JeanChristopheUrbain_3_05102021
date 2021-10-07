@@ -12,6 +12,9 @@ footer {
     display: flex;
     .logo {
       width: 20px;
+      .fa-utensils {
+        color: white;
+      }
     }
     p {
       margin-left: 10px;
@@ -20,6 +23,11 @@ footer {
 
   .footer__partenaire {
     display: flex;
+    .logo {
+      .fa-hands-helping {
+        color: white;
+      }
+    }
     p {
       margin-left: 10px;
     }

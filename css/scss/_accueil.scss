@@ -4,8 +4,12 @@
     padding-bottom: 60px;
     background-color: #f6f6f6;
 
+    h1 {
+      line-height: 70px;
+    }
+
     .header__logo {
-      height: 40px;
+      height: 60px;
       background-color: white;
     }
     .header__input {
@@ -95,11 +99,22 @@
           width: 17px;
           position: absolute;
           left: 10%;
+          i {
+            color: #7e7e7e;
+          }
         }
 
         .carte__titre {
           position: absolute;
           left: 20%;
+        }
+
+        &:hover {
+          .carte__icone {
+            i {
+              color: $primaire;
+            }
+          }
         }
       }
     }
@@ -179,8 +194,41 @@
           position: absolute;
           bottom: 14%;
           right: 6%;
-          i {
-            font-size: 22px;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+
+          .carte__coeur--noBg,
+          .carte__coeur--bg {
+            position: absolute;
+            bottom: 14%;
+            right: 6%;
+            cursor: pointer;
+            .fa-heart {
+              font-size: 22px;
+            }
+          }
+
+          .carte__coeur--noBg .noBg {
+            opacity: 1;
+          }
+
+          .carte__coeur--bg .bg {
+            opacity: 0;
+          }
+
+          &:target,
+          &:hover {
+            .carte__coeur--bg .bg {
+              opacity: 1;
+              background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transition: all 500ms;
+            }
+            .carte__coeur--noBg .noBg {
+              opacity: 0;
+            }
           }
         }
       }
