@@ -177,6 +177,14 @@ ul li {
 
 .accueil #fonctionnement .fonctionnement__carte .carte:hover .carte__icone i {
   color: #9356dc;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.accueil #fonctionnement .fonctionnement__carte .carte:hover {
+  background-color: #f5edff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .accueil #restaurants {
@@ -300,6 +308,40 @@ ul li {
 
 .accueil #restaurants .restaurants__carte .carte .carte__coeur:target .carte__coeur--noBg .noBg, .accueil #restaurants .restaurants__carte .carte .carte__coeur:hover .carte__coeur--noBg .noBg {
   opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .accueil #fonctionnement .fonctionnement__carte {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .accueil #restaurants .restaurants__carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .accueil #restaurants .restaurants__carte .carte {
+    min-height: 260px;
+    width: 47%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .accueil #fonctionnement h2 {
+    text-align: center;
+  }
+  .accueil #fonctionnement .fonctionnement__carte {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .accueil #restaurants .restaurants__carte .carte {
+    width: 24%;
+  }
 }
 
 footer {
@@ -430,22 +472,80 @@ footer p {
   position: relative;
   -webkit-box-shadow: 0px 8px 7px -5px #bdbdbd;
           box-shadow: 0px 8px 7px -5px #bdbdbd;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 .menuPage #menu .menu .carte h3 {
   margin-bottom: 5px;
   margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menuPage #menu .menu .carte h4 {
   margin-left: 10px;
   font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menuPage #menu .menu .carte h4 strong {
   position: absolute;
   bottom: 10px;
   right: 20px;
+  margin-left: 20px;
+}
+
+.menuPage #menu .menu .carte .carte__valide {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  opacity: 0;
+}
+
+.menuPage #menu .menu .carte .carte__valide i {
+  color: White;
+  width: 0;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+}
+
+.menuPage #menu .menu .carte:hover .carte__valide {
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.menuPage #menu .menu .carte:hover .carte__valide i {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  width: 60px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.menuPage #menu .menu .carte:hover h3 {
+  width: 70%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.menuPage #menu .menu .carte:hover h4 {
+  width: 65%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.menuPage #menu .menu .carte:hover h4 strong {
+  right: 70px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .menuPage #menu .menu__bouton {
@@ -472,5 +572,177 @@ footer p {
   -webkit-box-shadow: 0px 8px 7px -5px #a3a3a3;
           box-shadow: 0px 8px 7px -5px #a3a3a3;
   margin-bottom: 55px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuPage #menu {
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+  }
+  .menuPage #menu .centre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .menuPage #menu .centre .menu__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0;
+    width: 100%;
+  }
+  .menuPage #menu .centre .menu__titre i {
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  .menuPage #menu .centre .menu {
+    margin-bottom: 40px;
+    width: 40%;
+    margin: 0 auto;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 47%;
+            flex: 1 1 47%;
+    margin-right: 20px;
+  }
+  .menuPage #menu .centre .menu .menu__menu__titre h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #99e2d0;
+    margin: 5px 0 20px;
+  }
+  .menuPage #menu .centre .menu .carte {
+    background-color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    position: relative;
+    -webkit-box-shadow: 0px 8px 7px -5px #bdbdbd;
+            box-shadow: 0px 8px 7px -5px #bdbdbd;
+    -webkit-animation: fadein 1s;
+            animation: fadein 1s;
+  }
+  .menuPage #menu .centre .menu .carte h3 {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .menuPage #menu .centre .menu .carte h4 {
+    margin-left: 10px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .menuPage #menu .centre .menu .carte h4 strong {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    margin-left: 20px;
+  }
+  .menuPage #menu .centre .menu .carte .carte__valide {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #99e2d0;
+    border-radius: 0 15px 15px 0;
+    opacity: 0;
+  }
+  .menuPage #menu .centre .menu .carte .carte__valide i {
+    color: White;
+    width: 0;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+  }
+  .menuPage #menu .centre .menu .carte:hover .carte__valide {
+    opacity: 1;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .menuPage #menu .centre .menu .carte:hover .carte__valide i {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    width: 60px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  .menuPage #menu .centre .menu .carte:hover h3 {
+    width: 70%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .menuPage #menu .centre .menu .carte:hover h4 {
+    width: 65%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .menuPage #menu .centre .menu .carte:hover h4 strong {
+    right: 70px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .menuPage #menu .centre .menu__bouton {
+    width: 100%;
+    text-align: center;
+  }
+  .menuPage #menu .centre .menu__bouton button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-width: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff79d9), to(#9256dc));
+    background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+    background-color: #ff79d9;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    padding: 16px 50px;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 8px 7px -5px #a3a3a3;
+            box-shadow: 0px 8px 7px -5px #a3a3a3;
+    margin-bottom: 55px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

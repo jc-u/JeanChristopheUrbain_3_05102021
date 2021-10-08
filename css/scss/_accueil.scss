@@ -113,9 +113,15 @@
           .carte__icone {
             i {
               color: $primaire;
+              transition: 300ms;
             }
           }
         }
+      }
+
+      .carte:hover {
+        background-color: #f5edff;
+        transition: 300ms;
       }
     }
   }
@@ -228,6 +234,240 @@
             }
             .carte__coeur--noBg .noBg {
               opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .accueil {
+    header {
+      h1 {
+      }
+
+      .header__logo {
+      }
+      .header__input {
+        input {
+          &:focus {
+          }
+        }
+      }
+
+      .header__titre {
+        h2 {
+        }
+        h3 {
+        }
+      }
+
+      .header__bouton {
+        a {
+        }
+      }
+    }
+
+    #fonctionnement {
+      h2 {
+      }
+
+      .fonctionnement__carte {
+        width: 65%;
+        margin: 0 auto;
+        .carte {
+          .carte__numero {
+            h3 {
+            }
+          }
+
+          .carte__icone {
+            i {
+            }
+          }
+
+          .carte__titre {
+          }
+
+          &:hover {
+            .carte__icone {
+              i {
+              }
+            }
+          }
+        }
+
+        .carte:hover {
+        }
+      }
+    }
+
+    #restaurants {
+      h2 {
+      }
+
+      .restaurants__carte {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .carte {
+          min-height: 260px;
+          width: 47%;
+
+          a {
+            .carte__photo {
+            }
+
+            .carte__nouveau {
+              p {
+              }
+            }
+
+            .carte__titre {
+            }
+
+            .carte__lieu {
+              h3 {
+              }
+            }
+          }
+
+          .carte__coeur {
+            .carte__coeur--noBg,
+            .carte__coeur--bg {
+              .fa-heart {
+              }
+            }
+
+            .carte__coeur--noBg .noBg {
+            }
+
+            .carte__coeur--bg .bg {
+            }
+
+            &:target,
+            &:hover {
+              .carte__coeur--bg .bg {
+              }
+              .carte__coeur--noBg .noBg {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .accueil {
+    header {
+      h1 {
+      }
+
+      .header__logo {
+      }
+      .header__input {
+        input {
+          &:focus {
+          }
+        }
+      }
+
+      .header__titre {
+        h2 {
+        }
+        h3 {
+        }
+      }
+
+      .header__bouton {
+        a {
+        }
+      }
+    }
+
+    #fonctionnement {
+      h2 {
+        text-align: center;
+      }
+
+      .fonctionnement__carte {
+        width: 40%;
+        margin: 0 auto;
+        .carte {
+          .carte__numero {
+            h3 {
+            }
+          }
+
+          .carte__icone {
+            i {
+            }
+          }
+
+          .carte__titre {
+          }
+
+          &:hover {
+            .carte__icone {
+              i {
+              }
+            }
+          }
+        }
+
+        .carte:hover {
+        }
+      }
+    }
+
+    #restaurants {
+      h2 {
+      }
+
+      .restaurants__carte {
+        .carte {
+          width: 24%;
+
+          a {
+            .carte__photo {
+            }
+
+            .carte__nouveau {
+              p {
+              }
+            }
+
+            .carte__titre {
+            }
+
+            .carte__lieu {
+              h3 {
+              }
+            }
+          }
+
+          .carte__coeur {
+            .carte__coeur--noBg,
+            .carte__coeur--bg {
+              .fa-heart {
+              }
+            }
+
+            .carte__coeur--noBg .noBg {
+            }
+
+            .carte__coeur--bg .bg {
+            }
+
+            &:target,
+            &:hover {
+              .carte__coeur--bg .bg {
+              }
+              .carte__coeur--noBg .noBg {
+              }
             }
           }
         }
