@@ -345,6 +345,7 @@ ul li {
 }
 
 footer {
+  position: relative;
   background-color: #353535;
   padding: 30px 25px;
 }
@@ -453,8 +454,27 @@ footer p {
 
 .menuPage #menu .menu {
   margin-bottom: 40px;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+}
+
+.menuPage #menu .menu:nth-child(2) {
+  -webkit-animation: fadeIn 500ms;
+          animation: fadeIn 500ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.menuPage #menu .menu:nth-child(3) {
+  -webkit-animation: fadeIn 500ms;
+          animation: fadeIn 500ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.menuPage #menu .menu:nth-child(4) {
+  -webkit-animation: fadeIn 500ms;
+          animation: fadeIn 500ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 
 .menuPage #menu .menu .menu__menu__titre h4::after {
@@ -720,10 +740,6 @@ footer p {
     padding: 40px 0;
     width: 100%;
   }
-  .menuPage #menu .centre .menu__titre i {
-    font-size: 22px;
-    margin-right: 20px;
-  }
   .menuPage #menu .centre .menu {
     margin-bottom: 40px;
     width: 40%;
@@ -735,108 +751,15 @@ footer p {
             flex: 1 1 47%;
     margin-right: 20px;
   }
-  .menuPage #menu .centre .menu .menu__menu__titre h4::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #99e2d0;
-    margin: 5px 0 20px;
-  }
-  .menuPage #menu .centre .menu .carte {
-    background-color: white;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    position: relative;
-    -webkit-box-shadow: 0px 8px 7px -5px #bdbdbd;
-            box-shadow: 0px 8px 7px -5px #bdbdbd;
-  }
-  .menuPage #menu .centre .menu .carte h3 {
-    margin-bottom: 5px;
-    margin-left: 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .menuPage header .header__image {
+    height: 450px;
     overflow: hidden;
   }
-  .menuPage #menu .centre .menu .carte h4 {
-    margin-left: 10px;
-    font-size: 14px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .menuPage #menu .centre .menu .carte h4 strong {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    margin-left: 20px;
-  }
-  .menuPage #menu .centre .menu .carte .carte__valide {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: #99e2d0;
-    border-radius: 0 15px 15px 0;
-    opacity: 0;
-  }
-  .menuPage #menu .centre .menu .carte .carte__valide i {
-    color: White;
-    width: 0;
-    height: 62px;
-    text-align: center;
-    line-height: 62px;
-  }
-  .menuPage #menu .centre .menu .carte:hover .carte__valide {
-    opacity: 1;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .menuPage #menu .centre .menu .carte:hover .carte__valide i {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
-    width: 60px;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
-  }
-  .menuPage #menu .centre .menu .carte:hover h3 {
-    width: 70%;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .menuPage #menu .centre .menu .carte:hover h4 {
-    width: 65%;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .menuPage #menu .centre .menu .carte:hover h4 strong {
-    right: 70px;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .menuPage #menu .centre .menu__bouton {
-    width: 100%;
-    text-align: center;
-  }
-  .menuPage #menu .centre .menu__bouton button {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    border-width: 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff79d9), to(#9256dc));
-    background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-    background-color: #ff79d9;
-    border-radius: 28px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    padding: 16px 50px;
-    text-decoration: none;
-    -webkit-box-shadow: 0px 8px 7px -5px #a3a3a3;
-            box-shadow: 0px 8px 7px -5px #a3a3a3;
-    margin-bottom: 55px;
+  .menuPage #menu {
+    margin-top: 461px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
