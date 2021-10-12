@@ -482,24 +482,24 @@ footer p {
 }
 
 .menuPage #menu .menu:nth-child(2) {
-  -webkit-animation: fadeIn 1000ms;
-          animation: fadeIn 1000ms;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation: fadeIn 1500ms;
+          animation: fadeIn 1500ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .menuPage #menu .menu:nth-child(3) {
   -webkit-animation: fadeIn 1500ms;
           animation: fadeIn 1500ms;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 
 .menuPage #menu .menu:nth-child(4) {
-  -webkit-animation: fadeIn 2000ms;
-          animation: fadeIn 2000ms;
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
+  -webkit-animation: fadeIn 1500ms;
+          animation: fadeIn 1500ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
 }
 
 .menuPage #menu .menu .menu__menu__titre h4::after {
@@ -596,71 +596,71 @@ footer p {
 .menuPage #menu .menu .delay--1 {
   -webkit-animation: fadeInUp 500ms;
           animation: fadeInUp 500ms;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.menuPage #menu .menu .delay--2 {
-  -webkit-animation: fadeInUp 500ms;
-          animation: fadeInUp 500ms;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.menuPage #menu .menu .delay--3 {
-  -webkit-animation: fadeInUp 500ms;
-          animation: fadeInUp 500ms;
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.menuPage #menu .menu .delay--4 {
-  -webkit-animation: fadeInUp 500ms;
-          animation: fadeInUp 500ms;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.menuPage #menu .menu .delay--5 {
-  -webkit-animation: fadeInUp 500ms;
-          animation: fadeInUp 500ms;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
 }
 
-.menuPage #menu .menu .delay--6 {
+.menuPage #menu .menu .delay--2 {
   -webkit-animation: fadeInUp 500ms;
           animation: fadeInUp 500ms;
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
-.menuPage #menu .menu .delay--7 {
+.menuPage #menu .menu .delay--3 {
   -webkit-animation: fadeInUp 500ms;
           animation: fadeInUp 500ms;
   -webkit-animation-delay: 700ms;
           animation-delay: 700ms;
 }
 
-.menuPage #menu .menu .delay--8 {
+.menuPage #menu .menu .delay--4 {
   -webkit-animation: fadeInUp 500ms;
           animation: fadeInUp 500ms;
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
 }
 
-.menuPage #menu .menu .delay--9 {
+.menuPage #menu .menu .delay--5 {
   -webkit-animation: fadeInUp 500ms;
           animation: fadeInUp 500ms;
   -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
 }
 
-.menuPage #menu .menu .delay--10 {
+.menuPage #menu .menu .delay--6 {
   -webkit-animation: fadeInUp 500ms;
           animation: fadeInUp 500ms;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
+}
+
+.menuPage #menu .menu .delay--7 {
+  -webkit-animation: fadeInUp 500ms;
+          animation: fadeInUp 500ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+}
+
+.menuPage #menu .menu .delay--8 {
+  -webkit-animation: fadeInUp 500ms;
+          animation: fadeInUp 500ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.menuPage #menu .menu .delay--9 {
+  -webkit-animation: fadeInUp 500ms;
+          animation: fadeInUp 500ms;
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
+}
+
+.menuPage #menu .menu .delay--10 {
+  -webkit-animation: fadeInUp 500ms;
+          animation: fadeInUp 500ms;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
 }
 
 .menuPage #menu .menu__bouton {
@@ -821,7 +821,9 @@ footer p {
   display: inline-block;
   position: absolute;
   top: 42%;
-  left: 47%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 80px;
   height: 80px;
   margin: 0 auto;

@@ -55,16 +55,16 @@
       margin-bottom: 40px;
 
       &:nth-child(2) {
-        animation: fadeIn 1000ms;
-        animation-delay: 100ms;
+        animation: fadeIn 1500ms;
+        animation-delay: 500ms;
       }
       &:nth-child(3) {
         animation: fadeIn 1500ms;
-        animation-delay: 400ms;
+        animation-delay: 800ms;
       }
       &:nth-child(4) {
-        animation: fadeIn 2000ms;
-        animation-delay: 700ms;
+        animation: fadeIn 1500ms;
+        animation-delay: 1100ms;
       }
 
       .menu__menu__titre {
@@ -167,43 +167,43 @@
 
       .delay--1 {
         animation: fadeInUp 500ms;
-        animation-delay: 100ms;
+        animation-delay: 500ms;
       }
       .delay--2 {
         animation: fadeInUp 500ms;
-        animation-delay: 200ms;
+        animation-delay: 600ms;
       }
       .delay--3 {
         animation: fadeInUp 500ms;
-        animation-delay: 300ms;
+        animation-delay: 700ms;
       }
       .delay--4 {
         animation: fadeInUp 500ms;
-        animation-delay: 400ms;
+        animation-delay: 800ms;
       }
       .delay--5 {
         animation: fadeInUp 500ms;
-        animation-delay: 500ms;
+        animation-delay: 900ms;
       }
       .delay--6 {
         animation: fadeInUp 500ms;
-        animation-delay: 600ms;
+        animation-delay: 1000ms;
       }
       .delay--7 {
         animation: fadeInUp 500ms;
-        animation-delay: 700ms;
+        animation-delay: 1100ms;
       }
       .delay--8 {
         animation: fadeInUp 500ms;
-        animation-delay: 800ms;
+        animation-delay: 1200ms;
       }
       .delay--9 {
         animation: fadeInUp 500ms;
-        animation-delay: 900ms;
+        animation-delay: 1300ms;
       }
       .delay--10 {
         animation: fadeInUp 500ms;
-        animation-delay: 1000ms;
+        animation-delay: 1400ms;
       }
     }
 
