@@ -2,7 +2,7 @@
 
 # Projet 3 - Développeur Front-End
 
-[Page disponible sur GitHub Pages]()
+[Page disponible sur GitHub Pages](https://jc-u.github.io/JeanChristopheUrbain_3_05102021/)
 
 ## Dynamisez une page web avec des animations CSS
 
