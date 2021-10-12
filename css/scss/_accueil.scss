@@ -1,242 +1,260 @@
 .accueil {
-  header {
-    text-align: center;
-    padding-bottom: 60px;
-    background-color: #f6f6f6;
+  .contenu {
+    animation: body linear 3s;
+    header {
+      text-align: center;
+      padding-bottom: 60px;
+      background-color: #f6f6f6;
 
-    h1 {
-      line-height: 70px;
-    }
+      h1 {
+        line-height: 70px;
+      }
 
-    .header__logo {
-      height: 60px;
-      background-color: white;
-    }
-    .header__input {
-      background-color: #eaeaea;
-      height: 50px;
-      line-height: 50px;
-      input {
-        font-family: "Roboto", sans-serif;
-        border-width: 0;
-        text-align: center;
-        background-image: url("../../assets/map-marker-alt-solid.svg");
-        background-repeat: no-repeat;
+      .header__logo {
+        height: 60px;
+        background-color: white;
+      }
+      .header__input {
         background-color: #eaeaea;
+        height: 50px;
+        line-height: 50px;
+        input {
+          font-family: "Roboto", sans-serif;
+          border-width: 0;
+          text-align: center;
+          background-image: url("../../assets/map-marker-alt-solid.svg");
+          background-repeat: no-repeat;
+          background-color: #eaeaea;
 
-        &:focus {
-          outline: 0;
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+      .header__titre {
+        h2 {
+          width: 76%;
+          margin: 40px auto 10px;
+        }
+        h3 {
+          margin: 10px auto 40px;
+          font-weight: normal;
+        }
+      }
+
+      .header__bouton {
+        a {
+          background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+          background-color: #ff79d9;
+          border-radius: 28px;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-family: "Roboto", sans-serif;
+          font-size: 17px;
+          padding: 16px 31px;
+          text-decoration: none;
+          box-shadow: 0px 8px 7px -5px #bdbdbd;
         }
       }
     }
 
-    .header__titre {
+    #fonctionnement {
+      padding: 50px 0;
+
       h2 {
-        width: 76%;
-        margin: 40px auto 10px;
+        margin-bottom: 30px;
       }
-      h3 {
-        margin: 10px auto 40px;
-        font-weight: normal;
-      }
-    }
 
-    .header__bouton {
-      a {
-        background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-        background-color: #ff79d9;
-        border-radius: 28px;
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-family: "Roboto", sans-serif;
-        font-size: 17px;
-        padding: 16px 31px;
-        text-decoration: none;
-        box-shadow: 0px 8px 7px -5px #bdbdbd;
-      }
-    }
-  }
+      .fonctionnement__carte {
+        .carte {
+          display: flex;
+          align-items: center;
+          background-color: #f6f6f6;
+          padding: 35px 0;
+          margin-bottom: 20px;
+          border-radius: 28px;
+          position: relative;
+          text-align: center;
+          box-shadow: 0px 8px 7px -5px #bdbdbd;
+          margin-left: 10px;
 
-  #fonctionnement {
-    padding: 50px 0;
+          .carte__numero {
+            color: white;
+            background: $primaire;
+            padding: 5px;
+            border-radius: 20px;
+            position: absolute;
+            left: -10px;
+            width: 22px;
+            height: 22px;
 
-    h2 {
-      margin-bottom: 30px;
-    }
-
-    .fonctionnement__carte {
-      .carte {
-        display: flex;
-        align-items: center;
-        background-color: #f6f6f6;
-        padding: 35px 0;
-        margin-bottom: 20px;
-        border-radius: 28px;
-        position: relative;
-        text-align: center;
-        box-shadow: 0px 8px 7px -5px #bdbdbd;
-        margin-left: 10px;
-
-        .carte__numero {
-          color: white;
-          background: $primaire;
-          padding: 5px;
-          border-radius: 20px;
-          position: absolute;
-          left: -10px;
-          width: 22px;
-          height: 22px;
-
-          h3 {
-            line-height: 12px;
-            font-weight: normal;
-            font-size: 0.83em;
-          }
-        }
-
-        .carte__icone {
-          width: 17px;
-          position: absolute;
-          left: 10%;
-          i {
-            color: #7e7e7e;
-          }
-        }
-
-        .carte__titre {
-          position: absolute;
-          left: 20%;
-        }
-
-        &:hover {
-          .carte__icone {
-            i {
-              color: $primaire;
-              transition: 300ms;
+            h3 {
+              line-height: 12px;
+              font-weight: normal;
+              font-size: 0.83em;
             }
           }
-        }
-      }
 
-      .carte:hover {
-        background-color: #f5edff;
-        transition: 300ms;
-      }
-    }
-  }
-
-  #restaurants {
-    padding: 50px 0;
-    background-color: #f6f6f6;
-
-    h2 {
-      margin-bottom: 30px;
-    }
-
-    .restaurants__carte {
-      .carte {
-        min-height: 260px;
-        background-color: white;
-        border-radius: 20px;
-        position: relative;
-        margin-bottom: 20px;
-        box-shadow: 0px 8px 7px -5px #bdbdbd;
-        &:nth-child(1) a .carte__photo {
-          background-image: url("../../assets/la-palette-du-gout.jpg");
-        }
-        &:nth-child(2) a .carte__photo {
-          background-image: url("../../assets/la-note-enchantee.jpg");
-        }
-        &:nth-child(3) a .carte__photo {
-          background-image: url("../../assets/a-la-francaise.jpg");
-        }
-        &:nth-child(4) a .carte__photo {
-          background-image: url("../../assets/le-delice-des-sens.jpg");
-        }
-        a {
-          display: block;
-          height: 260px;
-          color: black;
-
-          .carte__photo {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            min-height: 63%;
-            overflow: hidden;
-            border-radius: 20px 20px 0 0;
-            position: relative;
-            z-index: 1;
-          }
-
-          .carte__nouveau {
+          .carte__icone {
+            width: 17px;
             position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color: $tertiaire;
-            z-index: 2;
-            border-radius: 2px;
-            p {
-              color: #008766;
-              padding: 10px;
-              font-weight: bold;
+            left: 10%;
+            i {
+              color: #7e7e7e;
             }
           }
 
           .carte__titre {
-            margin: 20px 0 10px 10px;
+            position: absolute;
+            left: 20%;
           }
 
-          .carte__lieu {
-            margin: 0 0 20px 10px;
-            h3 {
-              font-weight: normal;
+          &:hover {
+            .carte__icone {
+              i {
+                color: $primaire;
+                transition: 300ms;
+              }
             }
           }
         }
 
-        .carte__coeur {
-          position: absolute;
-          bottom: 14%;
-          right: 6%;
-          cursor: pointer;
-          width: 50px;
-          height: 50px;
+        .carte:hover {
+          background-color: #f5edff;
+          transition: 300ms;
+        }
+      }
+    }
 
-          .carte__coeur--noBg,
-          .carte__coeur--bg {
+    #restaurants {
+      padding: 50px 0;
+      background-color: #f6f6f6;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      .restaurants__carte {
+        .carte {
+          min-height: 260px;
+          background-color: white;
+          border-radius: 20px;
+          position: relative;
+          margin-bottom: 20px;
+          box-shadow: 0px 8px 7px -5px #bdbdbd;
+          &:nth-child(1) a .carte__photo {
+            background-image: url("../../assets/la-palette-du-gout.jpg");
+          }
+          &:nth-child(2) a .carte__photo {
+            background-image: url("../../assets/la-note-enchantee.jpg");
+          }
+          &:nth-child(3) a .carte__photo {
+            background-image: url("../../assets/a-la-francaise.jpg");
+          }
+          &:nth-child(4) a .carte__photo {
+            background-image: url("../../assets/le-delice-des-sens.jpg");
+          }
+          a {
+            display: block;
+            height: 260px;
+            color: black;
+
+            .carte__photo {
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              min-height: 63%;
+              overflow: hidden;
+              border-radius: 20px 20px 0 0;
+              position: relative;
+              z-index: 1;
+            }
+
+            .carte__nouveau {
+              position: absolute;
+              top: 15px;
+              right: 15px;
+              background-color: $tertiaire;
+              z-index: 2;
+              border-radius: 2px;
+              p {
+                color: #008766;
+                padding: 10px;
+                font-weight: bold;
+              }
+            }
+
+            .carte__titre {
+              margin: 20px 0 10px 10px;
+            }
+
+            .carte__lieu {
+              margin: 0 0 20px 10px;
+              h3 {
+                font-weight: normal;
+              }
+            }
+          }
+
+          .carte__coeur {
             position: absolute;
             bottom: 14%;
             right: 6%;
             cursor: pointer;
-            .fa-heart {
-              font-size: 22px;
+            width: 50px;
+            height: 50px;
+
+            .carte__coeur--noBg,
+            .carte__coeur--bg {
+              position: absolute;
+              bottom: 14%;
+              right: 6%;
+              cursor: pointer;
+              .fa-heart {
+                font-size: 22px;
+              }
             }
-          }
 
-          .carte__coeur--noBg .noBg {
-            opacity: 1;
-          }
-
-          .carte__coeur--bg .bg {
-            opacity: 0;
-          }
-
-          &:target,
-          &:hover {
-            .carte__coeur--bg .bg {
-              opacity: 1;
-              background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              transition: all 500ms;
-            }
             .carte__coeur--noBg .noBg {
+              opacity: 1;
+            }
+
+            .carte__coeur--bg .bg {
               opacity: 0;
+            }
+
+            &:target,
+            &:hover {
+              .carte__coeur--bg .bg {
+                opacity: 1;
+                background: linear-gradient(
+                  to bottom,
+                  #ff79d9 5%,
+                  #9256dc 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 500ms;
+              }
+              .carte__coeur--noBg .noBg {
+                opacity: 0;
+              }
             }
           }
         }
+      }
+    }
+
+    @keyframes body {
+      0%,
+      90% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
       }
     }
   }
@@ -360,6 +378,7 @@
     }
   }
 }
+
 @media (min-width: 1280px) {
   .accueil {
     header {
