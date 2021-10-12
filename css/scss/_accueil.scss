@@ -1,6 +1,11 @@
 .accueil {
   .contenu {
+    // DISPARITION DU CONTENU
+
     animation: body linear 3s;
+
+    // HEADER
+
     header {
       text-align: center;
       padding-bottom: 60px;
@@ -56,9 +61,18 @@
           padding: 16px 31px;
           text-decoration: none;
           box-shadow: 0px 8px 7px -5px #bdbdbd;
+
+          &:hover {
+            background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
+            box-shadow: 0px 8px 7px -5px #757575;
+          }
         }
       }
     }
+
+    // FIN HEADER
+
+    // SECTION FONCTIONNEMENT
 
     #fonctionnement {
       padding: 50px 0;
@@ -128,6 +142,10 @@
       }
     }
 
+    // FIN SECTION FONCTIONNEMENT
+
+    // SECTION RESTAURANTS
+
     #restaurants {
       padding: 50px 0;
       background-color: #f6f6f6;
@@ -145,16 +163,16 @@
           margin-bottom: 20px;
           box-shadow: 0px 8px 7px -5px #bdbdbd;
           &:nth-child(1) a .carte__photo {
-            background-image: url("../../assets/la-palette-du-gout.jpg");
+            background-image: url("../assets/la-palette-du-gout.jpg");
           }
           &:nth-child(2) a .carte__photo {
-            background-image: url("../../assets/la-note-enchantee.jpg");
+            background-image: url("../assets/la-note-enchantee.jpg");
           }
           &:nth-child(3) a .carte__photo {
-            background-image: url("../../assets/a-la-francaise.jpg");
+            background-image: url("../assets/a-la-francaise.jpg");
           }
           &:nth-child(4) a .carte__photo {
-            background-image: url("../../assets/le-delice-des-sens.jpg");
+            background-image: url("../assets/le-delice-des-sens.jpg");
           }
           a {
             display: block;
@@ -236,7 +254,7 @@
                 );
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                transition: all 500ms;
+                transition: all 1s;
               }
               .carte__coeur--noBg .noBg {
                 opacity: 0;
@@ -246,6 +264,10 @@
         }
       }
     }
+
+    // FIN SECTION RESTAURANTS
+
+    // ANIMATION APPARITION CONTENU ACCUEIL
 
     @keyframes body {
       0%,
@@ -259,6 +281,10 @@
     }
   }
 }
+
+// FIN ANIMATION APPARITION CONTENU ACCUEIL
+
+// RESPONSIVE TABLETTE
 
 @media (min-width: 768px) {
   .accueil {
@@ -379,6 +405,10 @@
   }
 }
 
+// FIN RESPONSIVE TABLETTE
+
+// DESKTOP
+
 @media (min-width: 1280px) {
   .accueil {
     header {
@@ -494,3 +524,5 @@
     }
   }
 }
+
+// FIN DESKTOP

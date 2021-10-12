@@ -108,6 +108,9 @@
     }
   }
 }
+
+// ANIMATION CHANGEMENT DE COULEUR LOGO
+
 @keyframes colorchange {
   0% {
     color: black;
@@ -129,6 +132,10 @@
   }
 }
 
+// FIN ANIMATION CHANGEMENT DE COULEUR LOGO
+
+// APPARITION DU LOADER
+
 @keyframes fadeInLoader {
   0% {
     transform: translateX(0);
@@ -140,6 +147,11 @@
     opacity: 0;
   }
 }
+
+// FIN APPARITION DU LOADER
+
+// ANIMATION SPINNER QUI TOURNE
+
 @keyframes loaderSpinner {
   0%,
   20%,
@@ -151,3 +163,5 @@
     transform: scale(1.5);
   }
 }
+
+// FIN ANIMATION SPINNER QUI TOURNE

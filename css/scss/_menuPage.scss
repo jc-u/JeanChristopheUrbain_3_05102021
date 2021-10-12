@@ -1,4 +1,8 @@
+// PAGE MENU
+
 .menuPage {
+  // HEADER
+
   header {
     position: relative;
     height: 60px;
@@ -32,6 +36,10 @@
     }
   }
 
+  // FIN HEADER
+
+  // MENU
+
   #menu {
     margin-top: 200px;
     position: relative;
@@ -47,11 +55,49 @@
         justify-content: space-between;
         padding: 40px 0;
 
-        i {
-          font-size: 22px;
+        // ANIMATION COEUR
+
+        .carte__coeur {
           margin-right: 20px;
+
+          .carte__coeur--noBg,
+          .carte__coeur--bg {
+            position: absolute;
+            top: 40px;
+            bottom: 0;
+            right: 6%;
+            cursor: pointer;
+            height: 22px;
+            .fa-heart {
+              font-size: 22px;
+            }
+          }
+
+          .carte__coeur--noBg .noBg {
+            opacity: 1;
+          }
+
+          .carte__coeur--bg .bg {
+            opacity: 0;
+          }
+
+          &:target,
+          &:hover {
+            .carte__coeur--bg .bg {
+              opacity: 1;
+              background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transition: all 1s;
+            }
+            .carte__coeur--noBg .noBg {
+              opacity: 0;
+            }
+          }
         }
       }
+
+      // CARTES
 
       .menu {
         margin-bottom: 40px;
@@ -164,6 +210,8 @@
           }
         }
 
+        // DELAI CARTES
+
         .delay--1 {
           animation: fadeInUp 2500ms;
           animation-delay: 800ms;
@@ -206,6 +254,10 @@
         }
       }
 
+      // FIN CARTES
+
+      // BOUTON
+
       .menu__bouton {
         width: 100%;
         text-align: center;
@@ -224,11 +276,20 @@
           text-decoration: none;
           box-shadow: 0px 8px 7px -5px #a3a3a3;
           margin-bottom: 55px;
+
+          &:hover {
+            background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
+            box-shadow: 0px 8px 7px -5px #757575;
+          }
         }
       }
     }
   }
+
+  // FIN MENU
 }
+
+// APPARITION CARTES EFFET VERS LE HAUT
 
 @keyframes fadeInUp {
   0% {
@@ -241,6 +302,11 @@
     transform: translateZ(0);
   }
 }
+
+// FIN APPARITION CARTES EFFET VERS LE HAUT
+
+// APPARITION ENTREES PLATS DESSERTS
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -252,6 +318,8 @@
     opacity: 1;
   }
 }
+
+// RESPONSIVE TABLETTE
 
 @media (min-width: 768px) {
   .menuPage {
@@ -358,6 +426,9 @@
     }
   }
 }
+
+// DESKTOP
+
 @media (min-width: 992px) {
   .menuPage {
     header {
