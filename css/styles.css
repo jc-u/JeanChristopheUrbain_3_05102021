@@ -87,7 +87,7 @@ ul li {
   font-family: "Roboto", sans-serif;
   border-width: 0;
   text-align: center;
-  background-image: url("../../assets/map-marker-alt-solid.svg");
+  background-image: url("../assets/map-marker-alt-solid.svg");
   background-repeat: no-repeat;
   background-color: #eaeaea;
 }
@@ -313,12 +313,14 @@ ul li {
   background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 4s;
+  transition: all 4s;
 }
 
 .accueil .contenu #restaurants .restaurants__carte .carte .carte__coeur:target .carte__coeur--noBg .noBg, .accueil .contenu #restaurants .restaurants__carte .carte .carte__coeur:hover .carte__coeur--noBg .noBg {
   opacity: 0;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
 @-webkit-keyframes body {
@@ -458,7 +460,7 @@ footer p {
 }
 
 .menuPage #menu {
-  margin-top: 200px;
+  margin-top: 160px;
   position: relative;
   z-index: 1;
   background-color: #f6f6f6;
@@ -481,6 +483,10 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 0;
+}
+
+.menuPage #menu .centre .menu__titre h1 {
+  font-size: 1.5em;
 }
 
 .menuPage #menu .centre .menu__titre .carte__coeur {
@@ -516,12 +522,14 @@ footer p {
   background: linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 4s;
+  transition: all 4s;
 }
 
 .menuPage #menu .centre .menu__titre .carte__coeur:target .carte__coeur--noBg .noBg, .menuPage #menu .centre .menu__titre .carte__coeur:hover .carte__coeur--noBg .noBg {
   opacity: 0;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
 .menuPage #menu .centre .menu {
@@ -576,6 +584,7 @@ footer p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 80%;
 }
 
 .menuPage #menu .centre .menu .carte h4 strong {
@@ -786,6 +795,12 @@ footer p {
   }
 }
 
+@media (min-width: 360px) {
+  .menuPage #menu {
+    margin-top: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   .menuPage #menu {
     margin-top: 200px;
@@ -793,17 +808,6 @@ footer p {
     z-index: 1;
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
-  }
-  .menuPage #menu .centre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
   }
   .menuPage #menu .centre .menu__titre {
     display: -webkit-box;
@@ -818,16 +822,13 @@ footer p {
     padding: 40px 0;
     width: 100%;
   }
+  .menuPage #menu .centre .menu__titre h1 {
+    font-size: 1.75em;
+  }
   .menuPage #menu .centre .menu {
     margin-bottom: 40px;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 47%;
-            flex: 1 1 47%;
-    margin-right: 20px;
   }
 }
 
@@ -837,7 +838,35 @@ footer p {
     overflow: hidden;
   }
   .menuPage #menu {
-    margin-top: 461px;
+    margin-top: 400px;
+  }
+  .menuPage #menu .centre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menuPage #menu .centre .menu__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0;
+    width: 100%;
+  }
+  .menuPage #menu .centre .menu__titre h1 {
+    font-size: 1.75em;
+  }
+  .menuPage #menu .centre .menu {
+    margin-bottom: 40px;
+    width: 30%;
+    margin: 0 auto;
   }
 }
 
